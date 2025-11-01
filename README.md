@@ -28,9 +28,9 @@ npm install
 ### 2. Set up environment variables
 
 The `.env` file is already created with default credentials:
-- Database: `usersdb`
-- User: `postgres`
-- Password: `postgres`
+- Database: `{DB_NAME}`
+- User: `{DB_USER}`
+- Password: `{DB_PASS}`
 - Port: `5432`
 
 ### 3. Start the PostgreSQL database
