@@ -15,4 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag docker_example_web_app:$(date +%s)
+      run: |
+        docker login --username MarkDM --password ${{ secrets.GH_PAT }} ghcr.io
+        docker build . --file Dockerfile --tag docker_example_web_app:$(date +%s)
+        docker push ghcr.io/markdm/docker_example_web_app:$(date +%s)
