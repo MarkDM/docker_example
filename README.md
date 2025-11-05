@@ -1,6 +1,6 @@
 # User Management App
 
-A simple CRUD application built with Next.js 16, PostgreSQL, and Tailwind CSS.
+A simple CRUD application built with Next.js 16, PostgreSQL, Tailwind CSS and Docker Containerization.
 
 ## Features
 
